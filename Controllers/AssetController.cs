@@ -9,10 +9,10 @@ public class AssetController(ILogger<AssetController> logger) : ControllerBase
 {
     private readonly ILogger<AssetController> _logger = logger;
 
-    [HttpGet("details/{id}")]
+    [HttpGet("assets/{id}")]
     public async Task<ActionResult> GetById(int id)
     {
-        return StatusCode(200);
+        return Ok(id);
     }
 
 }
