@@ -1,8 +1,21 @@
+# Base permission roles (one action on one resource each)
 p, asset_reader, asset, read
 p, asset_writer, asset, write
-p, asset_admin, asset, delete
+p, asset_deleter, asset, delete
+p, copay_reader, copay, read
+p, copay_writer, copay, write
+p, copay_deleter, copay, delete
 
+# admin holds no direct permissions; it inherits all the base roles
+g, admin, asset_reader
+g, admin, asset_writer
+g, admin, asset_deleter
+g, admin, copay_reader
+g, admin, copay_writer
+g, admin, copay_deleter
+
+# user -> role assignments
 g, alice, asset_reader
 g, alice, asset_writer
 g, bob, asset_reader
-g, cathy, asset_admin
+g, cathy, admin
