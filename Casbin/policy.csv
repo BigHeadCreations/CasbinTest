@@ -1,8 +1,8 @@
-p, reader, data, read
-p, writer, data, write
-p, admin, data, delete
+p, asset_reader, asset, read
+p, asset_writer, asset, write
+p, asset_admin, asset, delete
 
-g, alice, reader
-g, alice, writer
-g, bob, reader
-g, cathy, admin
+g, alice, asset_reader
+g, alice, asset_writer
+g, bob, asset_reader
+g, cathy, asset_admin
