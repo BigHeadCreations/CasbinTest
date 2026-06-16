@@ -19,3 +19,7 @@ g, alice, asset_reader
 g, alice, asset_writer
 g, bob, asset_reader
 g, cathy, admin
+g, tim, copay_reader
+g, theo, copay_reader
+g, theo, copay_writer
+g, frank, admin
