@@ -5,7 +5,7 @@
 
 
 # Test using `curl`
-`curl -H "X-User: frank" -X GET localhost:5236/copays/123`
+`curl -i -H "X-User: frank" -X GET localhost:5236/copays/123`
 
 Setting the `X-User` header sets the claims principal user.  
 Look at `policy.csv` for a list of users and their roles and what permission maps to each role.
